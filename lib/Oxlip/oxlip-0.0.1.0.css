@@ -1,0 +1,166 @@
+/*
+    Oxlip created by Aryan Ebrahimpour
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Oxlip Flex */
+.area{
+    display: flex;
+    align-content: space-around;
+    margin: 10;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.row{flex-direction: row;}
+.column{flex-direction: column;}
+
+.h-expand{height: 100%;}
+.w-expand{width: 100%;}
+
+.wrap{flex-wrap: wrap;}
+.no-wrap{flex-wrap: nowrap;}
+
+.jc-start{justify-content: flex-start;}
+.jc-end{justify-content: flex-end;}
+.jc-center{justify-content: center;}
+.jc-space-between{justify-content: space-between;}
+.jc-space-around{justify-content: space-around;}
+.jc-space-evenly{justify-content: space-evenly;}
+.text-center{text-align: center}
+
+.ac-start{align-content: flex-start;}
+.ac-end{align-content: flex-end;}
+.ac-center{align-content: center;}
+.ac-space-between{align-content: space-between;}
+.ac-space-around{align-content: space-around;}
+.ac-stretch{align-content: stretch;}
+
+.as-start{align-self: flex-start;}
+.as-end{align-self: flex-end;}
+.as-center{align-self: center;}
+.ac-baseline{align-self: baseline;}
+.as-stretch{align-self: stretch;}
+
+.ai-center{align-items: center;}
+.ai-basline{align-items: baseline;}
+.ai-end{align-items: flex-end;}
+.ai-start{align-items: flex-start;}
+.ai-stretch{align-items: stretch;}
+
+.oxf {flex-grow: 0; flex-basis: 0;}
+.ox, .ox1 {flex-grow: 1; flex-basis: 0;}
+.ox2 {flex-grow: 2; flex-basis: 0;}
+.ox3 {flex-grow: 3; flex-basis: 0;}
+.ox4 {flex-grow: 4; flex-basis: 0;}
+.ox5 {flex-grow: 5; flex-basis: 0;}
+.ox6 {flex-grow: 6; flex-basis: 0;}
+.ox7 {flex-grow: 7; flex-basis: 0;}
+.ox8 {flex-grow: 8; flex-basis: 0;}
+.ox9 {flex-grow: 9; flex-basis: 0;}
+.ox10 {flex-grow: 10; flex-basis: 0;}
+.auto-basis {flex-basis: auto;}
+
+.ox-navbar{
+    display: flex;
+    background: #e1e1e1;
+}
+.ox-navbar a {
+    padding: 5px 10px;
+    margin: 7px;
+    text-decoration: none;
+    color: #3f3f3f;
+    transition-duration: 200ms;
+}
+.ox-navbar a:hover{
+    background: #e7d163;
+    color: #474702;
+}
+
+.ox-space-between > *{
+    margin: 5px;
+}
+.ox-vertical {
+    flex-direction: column;
+}
+.area.ox-center{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.ox-nomargin{
+    margin: 0;
+}
+.ox-nopadding{
+    padding: 0;
+}
+.ox-thin{
+    margin: 0;
+    padding:0;
+}
+
+/* Oxlip features */
+.ox-document {
+    justify-content: center;
+    background: #f1f1f1;
+    box-shadow: 2px 2px 5px #9d9d9d;
+    border: 2px solid #e3e3e3;
+    width: 900px;
+    margin: 10px auto;
+}
+
+a:link {
+    color: #006da3;
+    text-decoration: none;
+}
+a:hover {
+    color: #053045;
+}
+
+a.ox-button {
+    padding: 5px 40px;
+    background: #e1e1e1;
+    border: 1px solid #b4b4b4;
+    text-align: center;
+    color: #555;
+    transition-duration: 200ms; 
+    color: #303030;
+}
+a.ox-button:hover {
+    color: green;
+    background: #76ec97;
+    border: 1px solid #25cb25;
+}
+
+
+.ox-recipe {
+    line-height: 15px;
+}
+
+.stay-away{
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 900px){
+    .ox-document {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .ox-navbar{
+        flex-direction: column;
+        
+    }
+    .ox-navbar a{
+        margin: 0;
+        padding: 10px;
+    }
+}
