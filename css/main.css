@@ -8,6 +8,10 @@ body{
     flex-flow: column;
     height: 100vh;
 }
+a{
+    color: #0088cc;
+    transition-duration: 200ms;
+}
 
 .shadow-block{
     background: white;
@@ -336,6 +340,39 @@ a.menu-item.hamburger{
     .side-content.open{
         display: none;
     }
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    display: table;
+    border-spacing: 2px;
+    box-shadow: 3px 3px 7px #ababab;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+thead tr {
+    background: #efefef;
+}
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+.table td, .table th{
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+}
+tr{
+    transition-duration: 200ms;
+    background: #fbfbfb9c;
+}
+tbody tr:hover {
+    background: #f7f7f7f6;
+    box-shadow: 4px 4px 7px #b4b4b4;
+    transform: translate(5px)
 }
 
 @media screen and (max-width: 645px){

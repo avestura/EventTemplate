@@ -67,6 +67,12 @@ body{
 .ox10 {flex-grow: 10; flex-basis: 0;}
 .auto-basis {flex-basis: auto;}
 
+.text.sucess{color: green;}
+.text.warning{color:#c38b24;}
+.text.error{color: #d52a2a;}
+.text.primary{color:dodgerblue;}
+.text{color: rgb(34, 34, 34);}
+
 .ox-navbar{
     display: flex;
     background: #e1e1e1;
