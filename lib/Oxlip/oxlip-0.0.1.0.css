@@ -73,6 +73,8 @@ body{
 .text.primary{color:dodgerblue;}
 .text{color: rgb(34, 34, 34);}
 
+.ov-hidden{overflow: hidden;}
+
 .ox-navbar{
     display: flex;
     background: #e1e1e1;
