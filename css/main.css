@@ -283,7 +283,7 @@ border-radius: 2px;
 
 input[type="submit"], a.btn {
     padding: 7px 10px;
-    margin: 0 2px;
+    margin: 2px;
     background: #e5e5e5;
     border: 0;
     color: #383838;
