@@ -14,18 +14,26 @@ a{
 }
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+textarea,
+select {
     border-top: none;
     transition-duration: 200ms;
     border-left: none;
     border-right: none;
     border-bottom: 1px solid rgb(196, 196, 196);
     background: #fafafa;
+    font-family: IRANSans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    margin: 5px;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
     background: #f5f5f5;
     box-shadow: 4px 4px 7px #b4b4b4;
     border: none;
@@ -143,15 +151,23 @@ div.user-auth .inner-auth{
     font-weight: bold;
 }
 
-.inner-auth form label, .inner-auth form input{
+form label, form input{
     margin: 5px;
     align-self: center;
 }
 .inner-auth form label{
     width: 80px;
 }
-.inner-auth form input{
-    padding: 5px;
+
+span.content-heading {
+    text-transform: uppercase;
+    color: #777777;
+    font-weight: bold;
+    margin: 30px 5px 6px 5px;
+    font-size: 13px;
+}
+span.content-heading:first-child {
+    margin-top: 0;
 }
 hr {
     width: 100%;
@@ -361,6 +377,10 @@ a.menu-item.hamburger{
     .side-content.open{
         display: none;
     }
+}
+
+#add-event-form label {
+    width: 120px;
 }
 
 table{

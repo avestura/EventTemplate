@@ -84,47 +84,77 @@
             </div>
             <div class="side-content area ox3">
                 <div class="area column ox ac-start no-wrap ovx-hidden">
-                    <h3 class="stay-away">Events</h3>
+                    <h3 class="stay-away">Add a new Event</h3>
                     <div class="area row stay-away">
-                        <a href="add_event.html" class="btn" >Add new Event</a>
-                        <a href="#" class="btn" >Import Events from file</a>
+                        <a href="events.html" class="btn" >Back to events moderation</a>
                     </div>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Type</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"><i class="fas fa-calendar"></i></th>
-                                <td>Windows Iot with C#</td>
-                                <td><span class="text warning">Requested Changes</span></td>
-                                <td><a href="#">View</a> | <a href="#">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><i class="fas fa-calendar"></i></th>
-                                <td>Client-side Web development with C# and Blazor</td>
-                                <td><span class="text sucess">Approved</span></td>
-                                <td><a href="#">View</a> | <a href="#">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><i class="fas fa-calendar"></i></th>
-                                <td>Machine Learning with F#</td>
-                                <td><span class="text sucess">Approved</span></td>
-                                <td><a href="#">View</a> | <a href="#">Delete</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row"><i class="fas fa-calendar"></i></th>
-                                <td>Writing desktop apps with python 2</td>
-                                <td><span class="text error">Declined</span></td>
-                                <td><a href="#">View</a> | <a href="#">Delete</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <form id="add-event-form">
+                        <div class="area column ox">
+                            <span class="content-heading">Event Details</span>
+                            <div class="area row ox">
+                                <label>Name:</label>
+                                <input class="ox" type="text" placeholder="Introducing a curated list of JS frameworks" />        
+                            </div>
+                            <div class="area row ox">
+                                    <label class="as-start">Description:</label>
+                                    <textarea class="ox" style="height: 100px" placeholder="Describe your event here..." ></textarea>
+                            </div>
+                            <div class="area row ox">
+                                    <label>Photo:</label>
+                                    <input type="file" class="ox" />
+                            </div>
+                            <div class="area row ox">
+                                    <label>Banner:</label>
+                                    <input type="file" class="ox" />
+                            </div>
+                            <span class="content-heading">Monetize</span>
+                            <div class="area row ox">
+                                    <label>Add Sponser:</label>
+                                    <select class="ox">
+                                        <option value="volvo">Microsoft</option>
+                                        <option value="saab">GitHub</option>
+                                    </select>
+                            </div>
+                            <div class="area row ox">
+                                    <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Type</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row"><i class="fas fa-calendar"></i></th>
+                                                    <td>Windows Iot with C#</td>
+                                                    <td><span class="text warning">Requested Changes</span></td>
+                                                    <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fas fa-calendar"></i></th>
+                                                    <td>Client-side Web development with C# and Blazor</td>
+                                                    <td><span class="text sucess">Approved</span></td>
+                                                    <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fas fa-calendar"></i></th>
+                                                    <td>Machine Learning with F#</td>
+                                                    <td><span class="text sucess">Approved</span></td>
+                                                    <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"><i class="fas fa-calendar"></i></th>
+                                                    <td>Writing desktop apps with python 2</td>
+                                                    <td><span class="text error">Declined</span></td>
+                                                    <td><a href="#">View</a> | <a href="#">Delete</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                            </div>
+                        </div>
+                    </form>
                     <div class="mini-pad"></div>
                 </div>
             </div>

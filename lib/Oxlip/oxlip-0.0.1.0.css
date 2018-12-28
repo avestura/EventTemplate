@@ -74,6 +74,7 @@ body{
 .text{color: rgb(34, 34, 34);}
 
 .ov-hidden{overflow: hidden;}
+.ovx-hidden{overflow-x: hidden;}
 
 .ox-navbar{
     display: flex;
