@@ -60,6 +60,7 @@ header a.menu-item:hover{
 .content-body{
     min-height: 200px;
     flex: 1;
+    flex-wrap: nowrap;
     overflow: auto;
 }
 .content-body.inner-margin{
@@ -396,6 +397,7 @@ tbody tr:hover {
     }
     .navbar{
         height: 45px;
+        flex-wrap: nowrap;
     }
     .navbar .header-right{
         display:none;
@@ -405,5 +407,11 @@ tbody tr:hover {
     }
     .navbar.open .header-right{
         display: flex;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .content-body #login{
+        width: 90%;
     }
 }
