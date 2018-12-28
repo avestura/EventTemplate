@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 $sideMenu.classList.add('open');
                 $sideContent.classList.add('open');
             }
+            toggleNavbar();
         }
         
     };
