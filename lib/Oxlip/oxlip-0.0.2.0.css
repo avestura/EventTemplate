@@ -67,6 +67,7 @@ body{
 .ox10 {flex-grow: 10; flex-basis: 0;}
 .auto-basis {flex-basis: auto;}
 
+
 .text.sucess{color: green;}
 .text.warning{color:#c38b24;}
 .text.error{color: #d52a2a;}
@@ -105,6 +106,9 @@ body{
 }
 .ox-nomargin{
     margin: 0;
+}
+.ox-nomargin.ox-force{
+    margin: 0 !important;
 }
 .ox-nopadding{
     padding: 0;
@@ -154,6 +158,9 @@ a.ox-button:hover {
 
 .stay-away{
     margin: 20px 0;
+}
+.stay-away.sides{
+    margin: 20px;
 }
 
 @media screen and (max-width: 900px){

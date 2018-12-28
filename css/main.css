@@ -94,7 +94,7 @@ header a.menu-item:hover{
 }
 
 footer {
-    height: 50px;
+    height: 30px;
     z-index: 100;
     font-size: 11px;
 }
@@ -362,22 +362,7 @@ a.menu-item.hamburger{
 .app-description{
     margin: 10px;
 }
-@media screen and (max-width: 940px){
-    .sidebar{
-        flex-grow: 0;
-        display:none;
-    }
-    a.menu-item.hamburger{
-        display: flex;
-    }
-    .sidebar.open{
-        display: flex;
-        flex-grow: 10;
-    }
-    .side-content.open{
-        display: none;
-    }
-}
+
 
 #add-event-form label {
     width: 120px;
@@ -414,6 +399,49 @@ tbody tr:hover {
     background: #f7f7f7f6;
     box-shadow: 4px 4px 7px #b4b4b4;
     transform: translate(5px)
+}
+
+#event-banner{
+    height: 200px;
+}
+
+span.event-title {
+    color: white;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    font-weight: bold;
+}
+span.event-presenter {
+    color: #e6e6e6;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+.info-item {
+    line-height: 24px;
+}
+.info-item .title {
+    width: 115px;
+    font-weight: bold;
+    color: #494949;
+}
+.event-content{
+    width: calc(100% - 40px);
+}
+@media screen and (max-width: 940px){
+    .sidebar{
+        flex-grow: 0;
+        display:none;
+    }
+    a.menu-item.hamburger{
+        display: flex;
+    }
+    .sidebar.open{
+        display: flex;
+        flex-grow: 10;
+    }
+    .side-content.open{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 645px){
@@ -454,8 +482,6 @@ tbody tr:hover {
     .content-body #login, .content-body #signup{
         width: 90%;
     }
-}
-@media screen and (max-height: 550px){
     .content-body #login, .content-body #signup{
         height: 90%;
     }
