@@ -411,7 +411,7 @@ tbody tr:hover {
 }
 
 @media screen and (max-width: 550px){
-    .content-body #login{
+    .content-body #login, .content-body #signup{
         width: 90%;
     }
 }
