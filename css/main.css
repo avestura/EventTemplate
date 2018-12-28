@@ -268,7 +268,8 @@ background: #aaa;
 
 .side-content{
     margin: 10px 20px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .profile-page{
     margin: 10px;
@@ -413,5 +414,10 @@ tbody tr:hover {
 @media screen and (max-width: 550px){
     .content-body #login, .content-body #signup{
         width: 90%;
+    }
+}
+@media screen and (max-height: 550px){
+    .content-body #login, .content-body #signup{
+        height: 90%;
     }
 }
